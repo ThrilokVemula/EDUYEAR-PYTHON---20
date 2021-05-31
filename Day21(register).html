@@ -1,0 +1,29 @@
+{% extends 'Day21(base).html' %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<div class="w-50 mx-auto">
+	<h1 class="my-5">Register!!</h1>
+	<form method="POST" action="/dashboard">
+		<div class="mb-3">
+			<label for="username" class="form-label">Username</label>
+			<input type="text" class="form-control" id="username" name="username">
+		</div>
+		<div class="mb-3">
+			<label for="password" class="form-label">Password</label>
+			<input type="password" class="form-control" id="password" name="pass">
+		</div>
+		<div class="mb-3">
+			<label for="password" class="form-label">Confirm Password</label>
+			<input type="password" class="form-control" id="password" name="pass">
+		</div>
+		
+		<button type="submit" class="mt-5 btn btn-primary">Create account</button>
+	</form>
+</div>
+
+{% endblock %}
